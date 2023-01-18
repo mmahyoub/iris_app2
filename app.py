@@ -35,13 +35,13 @@ if button:
     y_pred=model.predict([[s_length,s_width,p_length,p_width]])
     if y_pred[0] == 'Iris-setosa':
         st.subheader(y_pred[0])
-        st.image('images/setosa.jpg',width=300)
+        st.image('./setosa.jpg',width=300)
     if y_pred[0] == 'Iris-virginica':
         st.subheader(y_pred[0])
-        st.image('images/virginica.jpg',width=300)
+        st.image('./virginica.jpg',width=300)
     if y_pred[0] == 'Iris-versicolor':
         st.subheader(y_pred[0])
-        st.image('images/versicolor.jpg',width=300)
+        st.image('./versicolor.jpg',width=300)
 
 
 
